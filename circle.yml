@@ -30,4 +30,6 @@ jobs:
             pip install awscli
       - run:
           name: Push to S3 bucket
-          command: cd public/ && aws --debug s3 sync . s3://fuzzyedge.io
+          command: |
+            cd public/ && ls -lah
+            cd public/ && aws --debug s3 sync . s3://fuzzyedge.io
