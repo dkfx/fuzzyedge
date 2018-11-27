@@ -1,7 +1,7 @@
 menu:
   Home: /
   Archives: /archives
-  About Me: /about
+  About Me: /About-Me
 
 # gitment
 gitment: false
@@ -20,4 +20,4 @@ disqus: false
 disqus_shortname:
 
 # google analytics
-googleTrackId:
+googleTrackId: UA-129940395-1
