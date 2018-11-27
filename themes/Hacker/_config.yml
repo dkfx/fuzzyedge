@@ -1,6 +1,7 @@
 menu:
   Home: /
   Archives: /archives
+  About Me: /about
 
 # gitment
 gitment: false
