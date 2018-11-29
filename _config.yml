@@ -4,7 +4,7 @@
 
 # Site
 title: fuzzyEdge
-subtitle: Adventuers in computer security
+subtitle: Adventuers in Computer Security
 description: Computer Security Analysis
 keywords: security, sec, computer, hacking, testing, pen
 author: Matt Armour
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: Hacker
+theme: vexo
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
