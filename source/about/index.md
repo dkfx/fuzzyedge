@@ -14,6 +14,7 @@ With a strong drive to venture to the lesser explored Matt works to fully intern
 The best way to contact Matt is via email: matt@fuzzyedge.io
 
 Should you want to encrypt you messages:
+
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBFwBszYBEACfrQZI6f/pEqRdAtKB75N2KW+9giMePfsn/WTIO6K0ODL+CHdn
@@ -64,7 +65,9 @@ E4iisEXFivH1UkaFRRSSWRkJmF1SIKksPji7f2sRwunVl3Vq3ELvg0ZVLhqSdgwr
 yJkXqRpIBa/E8zM9y7fxEoTUFjEnqly6zgS2Ubvxth/1E/qMqPRSoi6UCk+L+P7g
 mk8SI/ilgJH1z4Ns7mx0PyeFrY8SpQUmPyptbJt/+HLEFtfo4dGImospQD2V6RzK
 FVQh0jZLMxApp7Q=
+
 =6edK
+
 -----END PGP PUBLIC KEY BLOCK-----
 
 
