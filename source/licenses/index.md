@@ -1,8 +1,8 @@
 ---
-title: licenses
+title: Licenses
 date: 2018-11-27 16:28:06
 ---
-
-Blog Theme: https://github.com/CodeDaraW/Hacker
+##Blog Software##
+Blog Theme: https://github.com/yanm1ng/hexo-theme-vexo
 Blog Code: https://hexo.io
 
