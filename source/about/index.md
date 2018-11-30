@@ -2,3 +2,72 @@
 title: About
 layout: about
 ---
+
+# About fuzzyEDGE
+
+fuzzyEDGE is the brain child of Matt Armour, a life long technologist with a focus on security and design. Though his pragmatic approach at looking at technology Matt has often found unique and interesting ways to solve technological problems as well as explore the gray areas of security. 
+
+With a strong drive to venture to the lesser explored Matt works to fully internalize the inner workings of every system he encounters. Thought that exploration he is able to leverage that knowledge to fully utilize systems and often find avenues that are not fully explored. This frequently leads to weaknesses in design and implementation that can be used to exploit or otherwise find vulnerabilities. This blog is about the adventures in finding those weak points and how we can better secure our ever more connected world. 
+
+## Contacting Matt
+
+The best way to contact Matt is via email: matt@fuzzyedge.io
+
+Should you want to encrypt you messages:
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mQINBFwBszYBEACfrQZI6f/pEqRdAtKB75N2KW+9giMePfsn/WTIO6K0ODL+CHdn
+UavBG3qCaHVA8RVcgIuJmmT0Oi+/tXPjFgfybaa11O8TSJacIT9rJAB64I0ZFw9R
+Jy31LdWVVKLfSabNpUyFjWy19bzXrsjTKm9mKSl1svTkG1Qs9w1x+fKcX4IfnHbM
+m417ug/uyel1I3OQSJbDGv10zsr0NWkCowefy99kvYdHjD2UDNXIH3pa0HPfIfLB
+rXoGscipzL5H/UbiFMYC1S9kZUPKJ6uQKGwfefaB32fp4twz1MVnJHQvCs9L9xq9
+JjNuzyH+E+kFs+Gmnd3ddU3QgwbrfWxzbYND+MvmfO0ENaGCn0MiqhGOpeS8jRsv
+ovtcHZNP5o9WnWtc2VEHoI7N8V2OtfkUblPE6t10kDejAgN8S5LLWbU8oP7exT17
+kFKKSpKC2WbHV+Op43YQ8OPVuV377r4UNvOI4kLAGAklGIJqw7kYH44Adq0MdnIY
+imGsIhBJ1JiY0AgfJYxDFc6/RyvqSDecQBNQfc1k1lvGXNG7k+PeNgr3otuWYbhl
+jOZl6cMfWgOW4XZi4xsRsf8F6eooYvSmWBm3eanHNX+cnToL4Y2DoqN5Rf1owkR2
+uFoavJX+d6g9RJ5wZQ3QKb1XIR26rpuLBQrqszgDQL9ll0FQttr41R/gqQARAQAB
+tCNNYXR0IEFybW91ciA8bWF0dC5hcm1vdXJAZ21haWwuY29tPokCVAQTAQgAPhYh
+BNW4n5Ub61F7ksySk/82D6BfElJBBQJcAbM2AhsDBQkDwmcABQsJCAcCBhUKCQgL
+AgQWAgMBAh4BAheAAAoJEP82D6BfElJBi0MQAIlqAhPpUyBzfM+E9icSAe3H1dFr
+TMh2PotB/BwqfWVK+pM1rTerK2o1iu29vnv3kCSwZS3o0dD/AhOhFviG8lR0CgZP
+3p2CD1n+nHb+uGj2a5S/jCqAq1dg4zHqXmLbeTANQJ/MIxYkNZLVAblQQ1Mcl7vq
+fWdTfpWduOKLz7850MeAu3/2UO+SeBgrKgS9HIaQrsSqLEBwyhJNp0pNVPgXkS+W
+iaVC/pQkx9nXfUnPRYo/zDQaPLeIfdG15ctKohXnznSp0+mQniJGtzWp117vo5bg
+MZaSAHBllTZcYP9mds/0QFsrd/u+plI/FqiZUN0gWUQS8dKKaQ80gJMLyMcYPEkS
+r6PUKb6L3r3xAnsxMeS63BVqbLnHvNqQvZejUPbwQTzxk9s2foAWBy9IwXU2j/ut
+iE1SiD0cSRhF5JaTHJvKnSTrcDnLp0AnDHaYahRDb6X3PuUPxXgHIzW6Dh3onXGS
+hIf0sWSjgBIyYHmHGDuI8iryNWD57vzOEmy9dERHla0SV+dhR337NV1QZLMMjYSa
+1uB1ekvXBJwUesDI5g5VA5dvZ7wyZraSpvJvrrSGNGjqP5lQfPPvk8lHVHpXgWPC
+hoIwKdDRo7tbyc8nAB5v/xt+tMCkxWS5F84JCtfkCC9leFZQybJRbhP2ypMJooMd
+aRujfS7Ib323GfeluQINBFwBszYBEACznhFC+W4w/ZYsg4LIlhCDRDUXRSmkaTKi
+f9DF08SyRRnk94HnaLQtuBXcZlQs+StEr1nm5KXNTA7gQ+JJuwXSbLtYs7PYdjB1
+MsuUinETmegtoDx4YtUZbL4oxDkA2tdsQ3Ny122Z4QfX5QXDr/DSv/Kn9CdrAvqT
+BOc1heV4j2ihtrfR//Wg3DGJHBpG8oKBlore//0IWocrY14XiXJn0q80oQiJGiKf
+raRmWlt1LLkWfGxJPRV+iT/Q0dXW+AnFRKowzu8VMELYrtJxoJxHMMb2cKffkk3Q
+ee8ks5Prrr6B9cnOFWAYSNcidwU+5HplMREmWS1WeOxZ0KyEKaFT9t58lMh6WIVe
+OfbB2IA63VDeHnjjFnuousG31SjiMGZNL8bnxyMrBS4fXs9MT4Lv/3jaYQWt50+b
+fHRVj2Ijlb9XIK2VYH4UqqNXn7v3IM4kHR3e2aGBXy3GTKe5qjo5UAULThThoDij
+TNQbn3irW40Bj+U1/pDwN39PIwQHUpbD29ln+B3uVAowG1DVr1UnH7U6fiMmgc08
+I5V9UcTSvhWWu6HVBmsgODyXgfPGZuyrFip6a+j+qCoIf73ckKl5ydkeGm3YckWB
+4QVxKoXotj3slvjizbB1TOfcePE79XHV4jpGxOrYM3DwsZ1fcpv0HlS9EBMMCfVq
+DS6mTD11aQARAQABiQI8BBgBCAAmFiEE1biflRvrUXuSzJKT/zYPoF8SUkEFAlwB
+szYCGwwFCQPCZwAACgkQ/zYPoF8SUkE+yQ//auJtEVsvT+0x0vTVS/NDcwtOD+3P
+K7CkVgW4QT6bbESyvM8UaILKSFe+cRILGbmuER1eWr64sf+mBH+LBkhrv/jo+K6j
+65GrhDMXpoCXUiRsD+YEtzmxouz4vtH5voFVLC5C/tvI1odjK3SfPml3kowRompl
+eHVtxYNOEfuQvWiLi2fAc9LT6zRnO9N2qDgp5XTZtrHu4plvFPQBxhaVQGCctMT6
+gFdffWh9in7n4H0MIq3YKHrHLUL3t0ZnMIw9gTiqUx9oFw748ioptX9r+9m8Ovon
+za/bXlPyT8+yt3wyJ/X9jA/7L2JXGMGqanwTMSkPc1CcgY8PHvA0JHP0Nk1xHza1
+4iOMSvlm76GLVQLyIvlAPom+hkWA6d0vGnxL0QGPKmL7LkcwJz2M/q/12NZ6N809
+He6jC+8XAx3FwqS/+EoYihRXQKJg85OlzszbpTZpZGKaEbpnMAS0TIzC0VJJ37FV
+E4iisEXFivH1UkaFRRSSWRkJmF1SIKksPji7f2sRwunVl3Vq3ELvg0ZVLhqSdgwr
+yJkXqRpIBa/E8zM9y7fxEoTUFjEnqly6zgS2Ubvxth/1E/qMqPRSoi6UCk+L+P7g
+mk8SI/ilgJH1z4Ns7mx0PyeFrY8SpQUmPyptbJt/+HLEFtfo4dGImospQD2V6RzK
+FVQh0jZLMxApp7Q=
+=6edK
+-----END PGP PUBLIC KEY BLOCK-----
+
+
+## Consulting Work
+
+If you are interested in having your product or service reviewed from a security standpoint please contact Matt via email to discuss options and look at your project in greater detail.
