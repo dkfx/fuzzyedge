@@ -6,13 +6,17 @@ title: About
 
 fuzzyEDGE is the brain child of Matt Armour, a life long technologist with a focus on security and design. Though his pragmatic approach at looking at technology Matt has often found unique and interesting ways to solve technological problems as well as explore the gray areas of security. 
 
+
 With a strong drive to venture to the lesser explored Matt works to fully internalize the inner workings of every system he encounters. Thought that exploration he is able to leverage that knowledge to fully utilize systems and often find avenues that are not fully explored. This frequently leads to weaknesses in design and implementation that can be used to exploit or otherwise find vulnerabilities. This blog is about the adventures in finding those weak points and how we can better secure our ever more connected world. 
+
 
 ## Contacting Matt
 
-The best way to contact Matt is via email: matt@fuzzyedge.io
+The best way to contact Matt is via email: <matt@fuzzyedge.io>
+
 
 Should you want to encrypt you messages:
+
 
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
