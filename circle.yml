@@ -14,6 +14,9 @@ jobs:
       - run:
           name: Install Hexo CLI
           command: npm install -g hexo-cli
+      - run:
+          name: Install Hexo Markdown Processor
+          command: npm install hexo-renderer-marked --save
       - restore_cache:
           keys:
             - npm-deps-{{ checksum "package.json" }}
