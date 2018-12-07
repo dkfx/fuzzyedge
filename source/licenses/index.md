@@ -1,6 +1,5 @@
 ---
 title: Responsible Disclosure & Licenses
-date: 2018-11-27 16:28:06
 banner: licenses.jpg
 ---
 ## Responsible Disclosure
