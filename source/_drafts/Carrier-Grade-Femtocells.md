@@ -24,7 +24,7 @@ femto-1213320015 login:
 ```
 
 From here, we are faced with a couple options. We could try and brute force an account on the cell or we could be a little more clever. Once again, we reboot the device and watch it boot up. This time, we look a little closer in the boot early boot process to see if we can step in before things really get going. 
-
+```
     Build:  V2_AE_1
     RESET:  POWER ON
 
@@ -73,8 +73,7 @@ From here, we are faced with a couple options. We could try and brute force an a
     MAC ARM  VLAN:  0003
     Net:   pc302_emac
     Hit any key to stop autoboot:
-
-
+```
 While there are some interesting data points in this output (like the ```Inventory PQDN``` endpoint, for example) lets focus in on the boot process and how we can inject ourselves into it. Once we see the ```Hit any key to stop autoboot:``` timer we are in luck. We tap a key and now the cell has dropped us to a u-boot shell. Type in ```help``` and we are offered up a full list of commands we can run at this stage in the process. 
 
 ```
@@ -153,4 +152,4 @@ While commands like ```cryptoDump``` are distracting here we focus on our goal o
 setenv othbootargs 'console=ttyS0,115200 init=/bin/sh'
 run bootcmd
 ```
-These commands do a few simple things. The ```setenv othbootargs``` portion of the command asks u-boot to update the ```othbootargs``` variable with the arguments we provided. By injecting our own arguments we can control the boot process and further our goal of getting root. ```console=ttyS0,115200``` ensures that we maintain our console access after u-boot kicks off the boot process and ```init=/bin/sh``` has the underlying system kick off a shell once the system is up. Once we have the variable updated we kick off the boot process with ```run bootcmd``` with bootcmd just being a larger array of commands that encompasses the updated othbootargs variable. 
+These commands do a few simple things. The ```setenv othbootargs``` portion of the command asks u-boot to update the ```othbootargs``` variable with the arguments we provided. By injecting our own arguments we can control the boot process and further our goal of getting root. ```console=ttyS0,115200``` ensures that we maintain our console access after u-boot kicks off the boot process and ```init=/bin/sh``` has the underlying system kick off a shell once the system is up. Once we have the variable updated we kick off the boot process with ```run bootcmd``` with bootcmd just being a larger array of commands that encompasses the updated ```othbootargs``` variable. 
