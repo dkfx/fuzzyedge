@@ -25,124 +25,124 @@ femto-1213320015 login:
 
 From here, we are faced with a couple options. We could try and brute force an account on the cell or we could be a little more clever. Once again, we reboot the device and watch it boot up. This time, we look a little closer in the boot early boot process to see if we can step in before things really get going. 
 ```
-    Build:  V2_AE_1
-    RESET:  POWER ON
+Build:  V2_AE_1
+RESET:  POWER ON
 
-    BLST START
-    SRAM:   BYPASS
-    SDRAM4: BYPASS
-    SDRAM3: BYPASS
-    SDRAM2: BYPASS
-    SDRAM1: BYPASS
-    SDRAM0: BYPASS
-    I-Cache, D-Cache and MMU are now Enabled
-    SPI NOR:    PASS
-    NAND:   PASS
-    LED:    PASS
-    ETH_SW: ethernetInit: Toggle the mii reset pin
-    PASS
-    CRYPTO: PASS
-    BLST END
+BLST START
+SRAM:   BYPASS
+SDRAM4: BYPASS
+SDRAM3: BYPASS
+SDRAM2: BYPASS
+SDRAM1: BYPASS
+SDRAM0: BYPASS
+I-Cache, D-Cache and MMU are now Enabled
+SPI NOR:    PASS
+NAND:   PASS
+LED:    PASS
+ETH_SW: ethernetInit: Toggle the mii reset pin
+PASS
+CRYPTO: PASS
+BLST END
 
 
-    INV Option: 0x30011001
-    LED CONFIG: 1
-    Crypto CSN: 0000003a08c2
-    INV Version:    0x13
-    Inventory MAC:  00:30:ab:2b:8f:e4
-    Inventory Crypto SN:    0000003a08c2
-    Inventory PQDN: dnsalias.net
+INV Option: 0x30011001
+LED CONFIG: 1
+Crypto CSN: 0000003a08c2
+INV Version:    0x13
+Inventory MAC:  00:30:ab:2b:8f:e4
+Inventory Crypto SN:    0000003a08c2
+Inventory PQDN: dnsalias.net
 
-    NOT DOING FACTORY RESET
+NOT DOING FACTORY RESET
 
-    NAND:  NAND device: Manufacturer ID: 0x2c, Chip ID: 0xda (Micron NAND 256MiB 3,3V 8-bit)
-    256 MiB
-    SPI NOR: MX25L1635D 2048 KB
+NAND:  NAND device: Manufacturer ID: 0x2c, Chip ID: 0xda (Micron NAND 256MiB 3,3V 8-bit)
+256 MiB
+SPI NOR: MX25L1635D 2048 KB
 
-    In:    serial
-    Out:   serial
-    Err:   serial
-    Setting MAC to 00:30:ab:2b:8f:e4
-    marvell_init: Initialising Marvell 88E6061 ethernet switch.
-    GL1 ATU CTRL:   6161
-    MAC UL  CTRL:   007f
-    MAC UL1 CTRL:   007f
-    MAC UL1 CTRL:   107f
-    MAC UL  VLAN:   0032
-    MAC UL1  VLAN:  0031
-    MAC ARM  VLAN:  0003
-    Net:   pc302_emac
-    Hit any key to stop autoboot:
+In:    serial
+Out:   serial
+Err:   serial
+Setting MAC to 00:30:ab:2b:8f:e4
+marvell_init: Initialising Marvell 88E6061 ethernet switch.
+GL1 ATU CTRL:   6161
+MAC UL  CTRL:   007f
+MAC UL1 CTRL:   007f
+MAC UL1 CTRL:   107f
+MAC UL  VLAN:   0032
+MAC UL1  VLAN:  0031
+MAC ARM  VLAN:  0003
+Net:   pc302_emac
+Hit any key to stop autoboot:
 ```
 While there are some interesting data points in this output (like the ```Inventory PQDN``` endpoint, for example) lets focus in on the boot process and how we can inject ourselves into it. Once we see the ```Hit any key to stop autoboot:``` timer we are in luck. We tap a key and now the cell has dropped us to a u-boot shell. Type in ```help``` and we are offered up a full list of commands we can run at this stage in the process. 
 
 ```
-    ?       - alias for 'help'
-    base     - print or set address offset
-    bdinfo  - print Board Info structure
-    bootm   - boot application image from memory
-    bootp   - boot image via network using BootP/TFTP protocol
-    cmp  - memory compare
-    cp   - memory copy
-    crc32    - checksum calculation
-    cryptoDump - Dumps the config memory space
-    dhcp    - invoke DHCP client to obtain IP/boot params
-    dns_query   -                            
-    ebiset - <pin> <val - 0 or 1>emac_mii_read - 
-    emac_mii_write - 
-    ethernetInit - Initialise the ethernet switch
-    ethernetPhyDump <phyid> - Dumps thernet PHY registers
-    exit    - exit script
-    fbsrboot - Boots to fbsr software
-    fsload  - load binary file from a filesystem image
-    fswrite - write binary file to a filesystem image
-    go      - start application at address 'addr'
-    help    - print online help
-    iminfo  - print header information for application image
-    loop     - infinite loop on address range
-    ls  - list files in a directory (default /)
-    marvellInit <0/1> - 0 Normal, 1 factory mode
-    md   - memory display
-    miscDestroyPrivateMiscData - Clear private data from the Misc flash area
-    mm   - memory modify (auto-incrementing)
-    modCommit - Commit a pending u-boot
-    modRun - Select and run next u-boot
-    modRunLinux - Select and run the generic
-    modShow - Show state of the MODsmtest    - simple RAM test
-    io_muxing_show - Shows current gpio muxing config
-    mw   - memory write (fill)
-    nand     - NAND sub-system
-    nboot    - boot from NAND device
-    nm   - memory modify (constant address)
-    norPartErase - Erase NOR Partition
-    norPartShow - Show NOR Partition Table(s)
-    ping    - send ICMP ECHO_REQUEST to network host
-    printcrc - print values of crc protected variables
-    printenv- print environment variables
-    programFLASH- Program FLASH
-    programIPL  - Program IPL
-    programMOD - Program MOD1 or MOD2
-    rarpboot- boot image via network using RARP/TFTP protocol
-    reset   - Perform RESET of the CPU
-    rm  - remove file. 
-    run     - run commands in an environment variable
-    saveenv - save environment variables to persistent storage
-    setcrc - set value protected crc variables
-    setenv  - set environment variables
-    sf  - SPI flash sub-system
-    sfsec - SPI Flash security related ops
-    sspi    - SPI utility commands
-    switch_reset- Initialise the ethernet switch
-    test    - minimal test like /bin/sh
-    tftpboot- boot image via network using TFTP protocol
-    umount  - umount yaffs
-    version - print monitor version
-    wdogTimerKick - kicks the watchdog 
-    wdogTimerPause - Pause watchdog timer
-    wdogTimerResume - Resume watchdog timer
-    wdogTimerSet - Change the interval for next h/w wdog kick
-    wdogTimerStart - Start watchdog 
-    yaffstrace  - switch on lots of trace
+?       - alias for 'help'
+base     - print or set address offset
+bdinfo  - print Board Info structure
+bootm   - boot application image from memory
+bootp   - boot image via network using BootP/TFTP protocol
+cmp  - memory compare
+cp   - memory copy
+crc32    - checksum calculation
+cryptoDump - Dumps the config memory space
+dhcp    - invoke DHCP client to obtain IP/boot params
+dns_query   -                            
+ebiset - <pin> <val - 0 or 1>emac_mii_read - 
+emac_mii_write - 
+ethernetInit - Initialise the ethernet switch
+ethernetPhyDump <phyid> - Dumps thernet PHY registers
+exit    - exit script
+fbsrboot - Boots to fbsr software
+fsload  - load binary file from a filesystem image
+fswrite - write binary file to a filesystem image
+go      - start application at address 'addr'
+help    - print online help
+iminfo  - print header information for application image
+loop     - infinite loop on address range
+ls  - list files in a directory (default /)
+marvellInit <0/1> - 0 Normal, 1 factory mode
+md   - memory display
+miscDestroyPrivateMiscData - Clear private data from the Misc flash area
+mm   - memory modify (auto-incrementing)
+modCommit - Commit a pending u-boot
+modRun - Select and run next u-boot
+modRunLinux - Select and run the generic
+modShow - Show state of the MODsmtest    - simple RAM test
+io_muxing_show - Shows current gpio muxing config
+mw   - memory write (fill)
+nand     - NAND sub-system
+nboot    - boot from NAND device
+nm   - memory modify (constant address)
+norPartErase - Erase NOR Partition
+norPartShow - Show NOR Partition Table(s)
+ping    - send ICMP ECHO_REQUEST to network host
+printcrc - print values of crc protected variables
+printenv- print environment variables
+programFLASH- Program FLASH
+programIPL  - Program IPL
+programMOD - Program MOD1 or MOD2
+rarpboot- boot image via network using RARP/TFTP protocol
+reset   - Perform RESET of the CPU
+rm  - remove file. 
+run     - run commands in an environment variable
+saveenv - save environment variables to persistent storage
+setcrc - set value protected crc variables
+setenv  - set environment variables
+sf  - SPI flash sub-system
+sfsec - SPI Flash security related ops
+sspi    - SPI utility commands
+switch_reset- Initialise the ethernet switch
+test    - minimal test like /bin/sh
+tftpboot- boot image via network using TFTP protocol
+umount  - umount yaffs
+version - print monitor version
+wdogTimerKick - kicks the watchdog 
+wdogTimerPause - Pause watchdog timer
+wdogTimerResume - Resume watchdog timer
+wdogTimerSet - Change the interval for next h/w wdog kick
+wdogTimerStart - Start watchdog 
+yaffstrace  - switch on lots of trace
 ```
 #### Kicking the Dog
 There are a lot of useful commands here but a few moments into reading them the device reboots and it goes back into normal boot process. What happened? The board has a built in watchdog timer that was not getting the input it needs while we were sitting on the u-boot menu. Reboot the cell again and pause the boot process. As we can see from the helpful command list above we can kick the watch dog by running a ```wdogTimerKick``` command but that only buys us about a minute before we have to run the command again to keep the device from rebooting. So, we run the ```wdogTimerPause``` command and now the watchdog is disabled while we check out the options we have here. 
