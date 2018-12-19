@@ -169,4 +169,4 @@ run bootcmd
 
 These commands do a few simple things. The ```setenv othbootargs``` portion of the command asks u-boot to update the ```othbootargs``` variable with the arguments we provided. By injecting our own arguments we can control the boot process and further our goal of getting root. ```console=ttyS0,115200``` ensures that we maintain our console access after u-boot kicks off the boot process and ```init=/bin/sh``` has the underlying system kick off a shell once the system is up. Once we have the variable updated we kick off the boot process with ```run bootcmd``` with bootcmd just being a larger array of commands that encompasses the updated ```othbootargs``` variable. 
 
-Test4
+Test5
