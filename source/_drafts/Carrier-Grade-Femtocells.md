@@ -1,6 +1,11 @@
 ---
 title: Carrier Grade Femtocells
-tags:femotocell, cellular, Alcatel-Lucent, physical access, root access
+tags:
+- femotocell
+- cellular
+- Alcatel-Lucent
+- physical access
+- root access
 banner:
 ---
 When consumer grade femotocells or small cells came into the market in 2009 it was a hackers dream. Not only could you get all the radios and software needed to connect to the cellular network all in one cost effective box but you had everything you needed to get devices in range to connect to your cell with little, if any, notification to the user. In 2013, at Black Hat, a group of hackers showed that by using a Samsung femotocell on the Verizon network they were able to record phone calls, capture and send SMS messages, and capture all data traffic going to and from the connected device. These cells, once breached, are a surveillant's dream. 
