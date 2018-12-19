@@ -29,7 +29,7 @@ femto-1213320015 login:
 ```
 
 From here, we are faced with a couple options. We could try and brute force an account on the cell or we could be a little more clever. Once again, we reboot the device and watch it boot up. This time, we look a little closer in the boot early boot process to see if we can step in before things really get going. 
-````
+```
     Build:  V2_AE_1
     RESET:  POWER ON
 
@@ -78,9 +78,9 @@ From here, we are faced with a couple options. We could try and brute force an a
     MAC ARM  VLAN:  0003
     Net:   pc302_emac
     Hit any key to stop autoboot:
-````
+```
 While there are some interesting data points in this output (like the ```Inventory PQDN``` endpoint, for example) lets focus in on the boot process and how we can inject ourselves into it. Once we see the ```Hit any key to stop autoboot:``` timer we are in luck. We tap a key and now the cell has dropped us to a u-boot shell. Type in ```help``` and we are offered up a full list of commands we can run at this stage in the process. 
-````
+```
     ?       - alias for 'help'
     base     - print or set address offset
     bdinfo  - print Board Info structure
@@ -147,7 +147,7 @@ While there are some interesting data points in this output (like the ```Invento
     wdogTimerSet - Change the interval for next h/w wdog kick
     wdogTimerStart - Start watchdog 
     yaffstrace  - switch on lots of trace
-````
+```
 ### Kicking the Dog
 There are a lot of useful commands here but a few moments into reading them the device reboots and it goes back into normal boot process. What happened? The board has a built in watchdog timer that was not getting the input it needs while we were sitting on the u-boot menu. Reboot the cell again and pause the boot process. As we can see from the helpful command list above we can kick the watch dog by running a ```wdogTimerKick``` command but that only buys us about a minute before we have to run the command again to keep the device from rebooting. So, we run the ```wdogTimerPause``` command and now the watchdog is disabled while we check out the options we have here. 
 ### Root Access
@@ -157,3 +157,5 @@ setenv othbootargs 'console=ttyS0,115200 init=/bin/sh'
 run bootcmd
 ```
 These commands do a few simple things. The ```setenv othbootargs``` portion of the command asks u-boot to update the ```othbootargs``` variable with the arguments we provided. By injecting our own arguments we can control the boot process and further our goal of getting root. ```console=ttyS0,115200``` ensures that we maintain our console access after u-boot kicks off the boot process and ```init=/bin/sh``` has the underlying system kick off a shell once the system is up. Once we have the variable updated we kick off the boot process with ```run bootcmd``` with bootcmd just being a larger array of commands that encompasses the updated ```othbootargs``` variable. 
+
+Test1
